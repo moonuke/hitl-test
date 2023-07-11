@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Roll Call Statistics System</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="Roll Call Statistics System Logo">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Student Management</a>
+            <ul>
+              <li><a href="#">Add Student</a></li>
+              <li><a href="#">Edit Student</a></li>
+              <li><a href="#">Delete Student</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Roll Call</a>
+            <ul>
+              <li><a href="#">Record Check-In</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Attendance Report</a>
+            <ul>
+              <li><a href="#">View Report</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Student Management Page -->
+      <section id="student-management">
+        <h1>Student Management</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>ID</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>123456</td>
+              <td><button>Delete</button></td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>789012</td>
+              <td><button>Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <button id="add-student">Add Student</button>
+      </section>
+      <!-- Roll Call Page -->
+      <section id="roll-call">
+        <h1>Roll Call</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Check-In</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td><input type="checkbox"></td>
+            </tr>
+          </tbody>
+        </table>
+        <label for="check-in-date">Check-In Date:</label>
+        <input type="date" id="check-in-date">
+        <button id="record-check-in">Record Check-In</button>
+      </section>
+      <!-- Attendance Report Page -->
+      <section id="attendance-report">
+        <h1>Attendance Report</h1>
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date">
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Total Check-Ins</th>
+              <th>Percentage of Attendance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>10</td>
+              <td>80%</td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>8</td>
+              <td>64%</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2021 Roll Call Statistics System</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
